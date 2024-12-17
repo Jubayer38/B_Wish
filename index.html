@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Special Birthday Wish</title>
+    <title>𝙱𝚒𝚛𝚝𝚑𝚍𝚊𝚢 𝚆𝚒𝚜𝚑 𝚝𝚘 𝙼𝚢 𝚂𝚙𝚎𝚌𝚒𝚊𝚕 𝙾𝚗𝚎</title>
     <style>
         body {
             margin: 0;
@@ -19,34 +19,33 @@
             white-space: nowrap;
             overflow: hidden;
             border-right: 0.15em solid white;
-            width: 0;
-            animation: typing 3s steps(30, end), blink 0.5s step-end infinite;
+            display: inline-block;
+            animation: typing 5s steps(100, end), blink 0.5s step-end infinite;
         }
         @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
+            from { width: 0; }
+            to { width: 100%; }
         }
         @keyframes blink {
-            from, to { border-color: transparent }
-            50% { border-color: white }
+            from, to { border-color: transparent; }
+            50% { border-color: white; }
         }
-        .floating-hearts {
+        .floating-symbols {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             overflow: hidden;
+            z-index: -1;
         }
-        .heart {
+        .symbol {
             position: absolute;
-            width: 50px;
-            height: 50px;
-            background: rgba(255, 255, 255, 0.6);
-            animation: float 5s infinite;
-            border-radius: 50%;
+            font-size: 2.5rem;
+            color: rgba(255, 0, 150, 0.6);
+            animation: floatSymbol 5s infinite;
         }
-        @keyframes float {
+        @keyframes floatSymbol {
             0% {
                 transform: translateY(100vh);
                 opacity: 0;
@@ -59,8 +58,8 @@
                 opacity: 0;
             }
         }
-        .heart:nth-child(odd) {
-            background: rgba(255, 0, 150, 0.6);
+        .symbol:nth-child(odd) {
+            color: rgba(255, 0, 0, 0.8);
             animation-duration: 6s;
         }
         .button {
@@ -88,22 +87,32 @@
     </style>
 </head>
 <body>
-    <div class="floating-hearts">
-        <!-- Multiple floating hearts -->
-        <div class="heart" style="left: 10%; animation-delay: 0s;"></div>
-        <div class="heart" style="left: 30%; animation-delay: 1s;"></div>
-        <div class="heart" style="left: 50%; animation-delay: 2s;"></div>
-        <div class="heart" style="left: 70%; animation-delay: 3s;"></div>
-        <div class="heart" style="left: 90%; animation-delay: 4s;"></div>
+    <div class="floating-symbols">
+        <div class="symbol" style="left: 10%; animation-delay: 0s;">❤𝓜𝓪𝔂𝓪𝓫𝓸𝓽𝓲❤</div>
+        <div class="symbol" style="left: 30%; animation-delay: 1s;">❤𝓜𝓪𝔂𝓪𝓫𝓸𝓽𝓲❤</div>
+        <div class="symbol" style="left: 50%; animation-delay: 2s;">❤𝓜𝓪𝔂𝓪𝓫𝓸𝓽𝓲❤</div>
+        <div class="symbol" style="left: 70%; animation-delay: 3s;">❤𝓜𝓪𝔂𝓪𝓫𝓸𝓽𝓲❤</div>
+        <div class="symbol" style="left: 90%; animation-delay: 4s;">❤𝓜𝓪𝔂𝓪𝓫𝓸𝓽𝓲❤</div>
     </div>
-    <div class="message-container" id="message">
-        Happy Birthday, Dear! 💖
+    <div id="message-container" class="message-container">
+        𝓗𝓪𝓹𝓹𝔂 22𝓷𝓭 𝓑𝓲𝓻𝓽𝓱𝓭𝓪𝔂 𝓽𝓸 𝓶𝔂 𝓭𝓮𝓪𝓻𝓮𝓼𝓽!💖𝓛𝓸𝓷𝓰 𝓵𝓲𝓿𝓮 𝓽𝓱𝓸𝓾𝓼𝓪𝓷𝓭 𝔂𝓮𝓪𝓻𝓼,𝓜𝓪𝔂𝓪𝓫𝓸𝓽𝓲💖
     </div>
-    <button class="button" onclick="showSurprise()">Reveal a Surprise</button>
+    <button class="button" onclick="showSurprise()">𝖢𝗅𝗂𝖼𝗄 𝖿𝗈𝗋 𝖶𝗂𝗌𝗁 𝖬𝖾𝗌𝗌𝖺𝗀𝖾</button>
     <script>
         function showSurprise() {
-            alert('Here’s to you, my love! 💝 Let’s make this day as special as you are!');
+            alert(
+                "𝕱𝖚𝖙𝖚𝖗𝖊 𝕸𝖎𝖈𝖗𝖔𝖇𝖎𝖔𝖑𝖔𝖌𝖎𝖘𝖙 𝖎𝖓 𝖔𝖚𝖗 𝖙𝖔𝖜𝖓 𝕴𝖓𝖘𝖍𝕬𝖑𝖑𝖆𝖍 💖\n𝓡 𝓯𝓸𝓻 𝓡𝓲𝓶𝓶𝓲 💖\n𝓡 𝓯𝓸𝓻 𝓡𝓮𝓭 \n𝓡𝓮𝓭 𝓯𝓸𝓻 𝓗𝓮𝓪𝓻𝓽 \n𝓗𝓮𝓪𝓻𝓽 𝓯𝓸𝓻 𝓛𝓸𝓿𝓮 \n𝓛𝓸𝓿𝓮 𝓯𝓸𝓻 𝓨𝓞𝓤 💖 \n𝓨𝓸𝓾 𝓯𝓸𝓻 𝓜𝓮?!\n\n𝓗𝓪𝓹𝓹𝔂 𝓑𝓲𝓻𝓽𝓱𝓭𝓪𝔂 𝓓𝓮𝓪𝓻💖💝💖\n\n" +
+                "𝚈𝚘𝚞 𝚊𝚛𝚎 𝚝𝚑𝚎 𝚛𝚎𝚊𝚜𝚘𝚗 𝚘𝚏 𝚖𝚢 𝚖𝚎𝚗𝚝𝚊𝚕 𝚑𝚊𝚙𝚙𝚒𝚗𝚎𝚜𝚜 𝚊𝚗𝚍 𝚢𝚘𝚞 𝚔𝚗𝚘𝚠 𝚒𝚝 𝚟𝚎𝚛𝚢 𝚌𝚕𝚎𝚊𝚛𝚕𝚢" +
+                "𝖯𝗎𝗋𝗂 𝗓𝗂𝗇𝖽𝖾𝗀𝗂 𝖻𝗁𝖺𝗋 𝗁𝖺𝗆𝖾𝗌𝗁𝖺 𝗆𝖾𝗋𝖾 𝖽𝗂𝗅 𝗄𝖺 𝗌𝗎𝗅𝗍𝖺𝗇 𝖻𝖺𝗇 𝗄𝖺𝗋 𝗋𝖺𝗁𝗈.𝖳𝗎𝗆 𝗆𝗎𝗃𝗁𝖾 𝗉𝖺𝗒𝖺𝗋 𝗄𝖺𝗋𝗈 𝗒𝖺 𝗇𝖾𝗁𝗂 𝗄𝖺𝗋𝗈 𝗆𝗎𝗃𝗁𝖾 𝗄𝗈𝗒𝗂 𝖿𝖺𝗋𝖺𝗄 𝗇𝖾𝗁𝗂 𝗉𝖺𝗋𝗍𝖺❤"
+            );
         }
+
+        // Keep the message fixed after typing animation
+        setTimeout(() => {
+            const messageContainer = document.getElementById('message-container');
+            messageContainer.style.animation = 'none';
+            messageContainer.style.border = 'none';
+        }, 5000); // Matches the duration of the typing animation
     </script>
 </body>
 </html>
